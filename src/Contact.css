@@ -1,0 +1,35 @@
+.contact-box{
+    background-color: white;
+    margin-top: 100px;
+    box-sizing: border-box;
+    box-shadow: whitesmoke;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+    margin-left: 500px;
+    box-shadow: 2px 2px #888888;
+}
+
+.bi{
+    text-align: center;
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+@media screen  and (max-width:540px){
+    .bi{
+        height: 20px;
+        width:20px;
+        margin-right: 30px;
+        margin-left: 20px;
+        
+
+    }
+    .contact-box{
+        margin-left: 50px;
+        width:250px;
+        height: 100px;
+    }
+}

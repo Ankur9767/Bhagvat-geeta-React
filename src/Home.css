@@ -1,0 +1,185 @@
+*{
+    margin: 0ex;
+}
+.chapter_inp{
+    border:none;
+    height: 40px;
+    border-radius: 4px;
+    width:400px;
+    margin-top: 40px;
+    margin: 30px;
+    background-color: lightgray;
+    font-size: 15px;
+    margin-left: 300px;
+    outline: orangered;
+
+}
+
+.summary{
+    width: 700px;
+    height: max-content;
+    color:brown;
+    background-color: rgb(173, 216, 230,0.6);
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;    
+    padding: 30px;
+    margin-left: 500px;
+    
+    
+}
+.submit_button{
+    height: 40px;
+    background-color: lightskyblue;
+    border-radius: 4px;
+    border:1px solid rgb(0, 132, 255);
+    width: 100px;
+    margin-top: 30px;
+    margin: 30px;
+    margin-right: 500px;
+}
+.Home{
+    z-index: 1;
+}
+.heading{
+    background-color: rgba(16, 212, 75, 0.2);
+    width: max-content;
+    text-align: center;
+    color: salmon;
+    margin-left: 700px;
+    padding: 30px;
+    margin-top:30px;
+    margin-bottom: 20px;
+
+
+}
+.slok{
+    background-color: seashell;
+    
+    width:700px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;    
+    padding: 30px;
+    margin-left: 500px;
+    color: #ff9933;
+}
+.translation{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.author{
+    margin-left: 250px;
+    font-size: 15px;
+    font-weight: 400;
+    color: red;
+
+}
+.chapter_form{
+    
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 100px;
+    
+}
+
+
+@media screen and (max-width:600px){
+    .chapter_inp{
+        border:none;
+        height: 40px;
+        border-radius: 4px;
+        width:250px;
+        margin-top: 20px;
+        margin: 20px;
+        background-color: lightgray;
+        font-size: 15px;
+        margin-left: 10px;
+        
+    
+    }
+    
+    .summary{
+        width: 250px;
+        height: max-content;
+        color:brown;
+        background-color: whitesmoke;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;    
+        padding: 30px;
+        margin-left: 15px;
+        
+        
+    }
+    .submit_button{
+        height: 40px;
+        background-color: lightskyblue;
+        border-radius: 4px;
+        border:1px solid rgb(0, 132, 255);
+        text-align: center;
+        margin-right: 20px;
+        margin-left:100px;
+        margin-top: -10px;
+        
+        
+    }
+    .Home{
+        z-index: 1;
+    }
+    .heading{
+        background-color: rgba(16, 212, 75, 0.2);
+        width: 250px;
+        height: max-content;
+        color:brown;        
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;    
+        padding: 30px;
+        margin-left: 15px;
+    
+    
+    }
+    .slok{
+        background-color: seashell;        
+        width: 250px;
+        height: max-content;
+        color:brown;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;    
+        padding: 30px;
+        margin-left: 15px;
+    }
+    .translation{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .author{
+        margin-left: 140px;
+        font-size: 15px;
+        font-weight: 200;
+        color: red;
+    
+    }
+    .chapter_form{
+    
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 20px;
+    
+}
+.chapters{
+    display: flex;
+    flex-direction: column;
+}
+
+    
+
+    
+}
+ 
