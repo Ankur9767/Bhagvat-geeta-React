@@ -5,23 +5,25 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     return (
         <div>
-        <div className="conatiner-fluid Header col4 cover-fill">
-            <img className='logo' src="https://cdn-icons-png.flaticon.com/512/3100/3100802.png" height="80px"  width="100px"
+        <div className=" container-fluid Header">
+            <img className="logo" src="https://cdn-icons-png.flaticon.com/512/3100/3100802.png" height="80px"  width="100px"
              />
-             <div className="header_2 col3" >
-             <Link to="/" className='Chpater_nav'>
-                 <h2 >Sloks/verses</h2>
+             <div className="header_2 container-fluid col">
+             <Link to="/" className="Chpater_nav">
+                 <p >Verses</p>
              </Link>
-             <Link to="/chapter" className='Chpater_page'>
-             <h2>Chapters</h2>
+             <Link to="/chapter" className="Chpater_page">
+             <p>Chapters</p>
              </Link>
-             <Link to="/contact" className='Contact'> <h2>Contact us</h2>
+             <Link to="/contact" className="Contact"> <p>Contact us</p>
              </Link>
+             
              </div>
-
+            
         
 
         </div>
+        
             
         </div>
     )

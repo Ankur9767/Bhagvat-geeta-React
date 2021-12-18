@@ -33,24 +33,24 @@ const Chapter = () => {
     return (
         <div>
         <Header />
-        <form className="chapter_info">
-        <input className="input_chapter" type="text" value={chapter} placeholder="Enter chapter's number from 1 to 18 "
+        <form className="chapter_info container-sm  d-flex justify-content-center">
+        <input className="input_chapter me-5" type="text" value={chapter} placeholder="Enter chapter's number from 1 to 18 "
         onChange={(e)=>setchapter(e.target.value)} />
-        <button className="search_btn"> Search</button>
+        <button className="btn btn-warning"> Search</button>
         </form>
         {
             data.map((chap)=>{
                 return(
                     <div key={chap.id}> 
                     {chapter==chap.chapter_number &&                        
-                    <div className='chapter_Summary'>
-                    <div className='chapter_head'>
-                    <h2 className="chapter_name">{chap.chapter_number} :{chap.name}</h2>
-                    <h2 className="Chap_heading">{chap.slug}</h2>
-                    <h3 className="total_verses">Number of verses :{chap.verses_count}</h3>
+                    <div className="container-sm chapter_Summary card d-flex flex-column">
+                    <div className="chapter_head card-header">
+                    <p className="chapter_name">{chap.chapter_number} :{chap.name}</p>
+                    <p className="Chap_heading">{chap.slug}</p>
+                    <p className="total_verses">Number of verses :{chap.verses_count}</p>
                     </div>
 
-                        <p className='chap_summary'>{chap.chapter_summary}</p>
+                        <p className="chap_summary  container-sm card-body">{chap.chapter_summary}</p>
                     </div>
                     }
                     </div>
