@@ -4,11 +4,16 @@
 }
 .Header{
     
-    color:rgb(26, 154, 228);
+    color:rgb(233, 99, 21);
     background-color:rgb(243, 237, 150,0.4) ;
     width: 100%;
     display: flex;
     background-size: cover;
+    box-shadow:
+    inset 0 -3em 3em rgba(94, 202, 152, 0.4),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+
     
     
 }
@@ -33,18 +38,18 @@
 .Contact{
     
     text-decoration: none;
-    color:rgb(26, 154, 228) ;
+    color:rgb(231, 97, 20) ;
 }
 .Chpater_nav{
    
     text-decoration: none;
-    color: rgb(26, 154, 228);
+    color: rgb(231, 97, 20);
 
 }
 .Chpater_page{
  
     text-decoration: none;
-    color: rgb(26, 154, 228);
+    color: rgb(231, 97, 20);
 }
 @media screen and (max-width:540px) {
     *{
@@ -54,7 +59,9 @@
         
         color:rgb(26, 154, 228);
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
+        
+        
          
         width: 100%;    
         
@@ -75,7 +82,7 @@
         font-size: 14px;
     
         width: 100%;
-        background-color:rgb(255, 239, 213) ;
+       
         
         
     
@@ -88,13 +95,13 @@
     .Chpater_nav{
         padding-right:10px;
         text-decoration: none;
-        color: rgb(26, 154, 228);
+        
     
     }
     .Chpater_page{
         padding-left: 5px;
         text-decoration: none;
-        color: rgb(26, 154, 228);
+       
     }
     
 

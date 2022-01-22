@@ -2,10 +2,13 @@ import React,{ useEffect, useState } from 'react'
 import Axios from 'axios';
 import "./Home.css"
 import Header from './Header';
+import bgvideo from './media/bg.mp4';
+import { useParams } from 'react-router-dom';
+
 
 const Home = () => {
     
-const [chapter, setChapter]= useState();
+const { chapter } =useParams();
 const [user, setUser] = useState([]);
 const [slok,setSlok] =useState();
 
@@ -34,14 +37,22 @@ async function getChpters(){
 
    
 }
-const onsubmit =(e)=>{
-    e.preventDefault();
-    getChpters();
-}
+ useEffect(() => {
+        getChpters();
+        
+       
+        
+        
+    }, [])
 
     return (
         <div className="Home">
         <Header />
+        <div className="mantra"><h2> ||ॐ नमो भगवते वासुदेवाय नमः ||</h2></div>
+        {/* <div className="back-vid">
+        <video src={bgvideo} type="video/mp4" loop autoPlay muted> 
+        </video>
+        </div>
         <form className="container-sm chapter_form d-flex justify-content-center" onClick={onsubmit}>
         <input className="chapter_inp input-group-sm" type="number" value={chapter}  
         placeholder="Enter chapter's number from 1 to 18"
@@ -53,13 +64,13 @@ const onsubmit =(e)=>{
       
        
        <button className="btn btn-warning ms-4" > Search </button> 
-        </form> 
+        </form>  */}
         <div className='chapter'>
         { user.map((use)=>{
         return(
         <div>
         {chapter==use.chapter_number &&
-           <div key={use.id} className="chapters-sm card  border-0 d-flex flex-column me-1 ms-1"> 
+           <div key={use.id} className="border-0 d-flex flex-column me-1 ms-1"> 
            <h1 className="heading">{use.slug}</h1>                    
             <p className="slok container-sm card-header">{use.text}</p>
             <div className="summary container-sm card-body">
