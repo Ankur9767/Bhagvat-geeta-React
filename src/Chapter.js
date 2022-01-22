@@ -66,7 +66,7 @@ const Chapter = () => {
                         {chap.chapter_summary_hindi}
                         <div>
                      <Link className="link_chapter mb-5" to={`/home/${chap.chapter_number}`}>
-                      <p className="knowmore">Go to veses</p>
+                      <p className="knowmore">Go to verses</p>
                     </Link> </div>
                         </p>
                         {/* <div>
